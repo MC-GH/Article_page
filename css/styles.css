@@ -1,0 +1,25 @@
+
+
+.top-articles > * {
+    border: 1px solid red;
+}
+.top-articles .col {
+    /* min-width: 200px; */
+}
+
+#rightArticles > .container-fluid {
+    /* height: auto; */
+}
+
+/* .title {
+    height: 10%;
+}
+
+.items {
+    height: 90%;
+} */
+
+svg g .helder {
+    max-height: 10px;
+    width: auto;
+}
