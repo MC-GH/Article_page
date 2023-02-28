@@ -36,18 +36,12 @@ header .container-fluid {
 }
 
 .welcome-item {
-    font-size: 14px;
     color: white;
-    font-weight: 600;
     background-color: var(--purple);
-    padding: 12px 10px;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
 }
 
-.welcome-item svg {
+.welcome-item svg, .share-item svg {
     margin-top: 2px;
 }
 
@@ -55,11 +49,18 @@ header .container-fluid {
     background-color: var(--purpleHover);
 }
 
-.share-item {
+.welcome-item, .share-item {
+    font-size: 14px;
+    padding: 8px 20px;
     border-radius: 4px;
-    border: 1px solid #15103a;
-    padding: 12px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.share-item {
+    border: 1px solid #15103a;
 }
 
 .share-item:hover {
@@ -68,7 +69,8 @@ header .container-fluid {
 }
 
 .nav-logo {
-    width: 100px;
+    width: 150px;
+    
 }
 
   .navbar-light .navbar-toggler-icon {
