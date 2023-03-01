@@ -43,6 +43,20 @@ header .container-fluid {
     border: none;
 }
 
+.nav-responsive .dropdown-menu {
+    width: 100%;
+}
+
+.nav-responsive .dropdown-menu .col-6 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav-responsive .dropdown-menu img {
+    border-radius: 5px;
+}
+
 .bold {
     font-weight: 500;
 }
