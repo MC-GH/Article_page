@@ -2,6 +2,7 @@
 :root {
     --purple: #5541f0;
     --purpleHover:#4133af;
+    --lineColor: #f1f1f8;
 }
 
 * {
@@ -19,9 +20,8 @@ a:hover {
 
 header {
     width: 100vw;
-    height: 80px;
-    border-bottom: 1px solid #f1f1f8;
-    padding: 0;
+    border-bottom: 1px solid var(--lineColor);
+    padding: 15px 0px;
 }
 
 header .container-fluid {
@@ -36,9 +36,19 @@ header .container-fluid {
     display: none;
 }
 
-.dropdown-menu {
-    width: 100%;
+.nav-responsive button {
+    padding: 0;
+    background-color: transparent;
+    color: black;
+    border: none;
+}
 
+.bold {
+    font-weight: 500;
+}
+
+.large {
+    font-size: 20px;
 }
 
 .nav-left, .nav-right {
@@ -63,12 +73,13 @@ header .container-fluid {
 
 .welcome-item, .share-item, .nav-item{
     font-size: 14px;
-    padding: 8px 20px;
+    padding: 8px 15px;
     border-radius: 4px;
     font-weight: 600;
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 .share-item {
@@ -81,7 +92,7 @@ header .container-fluid {
 }
 
 .nav-logo {
-    width: 150px;
+    width: 120px;
 }
 
 .nav-weather svg, .nav-traffic svg {
@@ -89,7 +100,7 @@ header .container-fluid {
 }
 
 .nav-right {
-    gap: 20px;
+    gap: 10px;
     font-weight: 500;
 }
 
@@ -103,14 +114,25 @@ header .container-fluid {
     align-items: center;
     display: flex;
     gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.responsive-settings, .responsive-contact {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .nav-right, .nav-left {
+    .nav-left, .nav-traffic, .search, .nav-weather {
         display: none;
     }
 
-    .nav-responsive {
+    .nav-responsive, .responsive-settings, .responsive-contact {
         display: block;
     }
+
+    .nav-right {
+        gap: 20px;
+    }
+
+
 }
