@@ -47,6 +47,9 @@ header .container-fluid {
     width: 100%;
 }
 
+.nav-responsive .dropdown-menu .row {
+}
+
 .nav-responsive .dropdown-menu .col-6 {
     display: flex;
     justify-content: center;
@@ -148,5 +151,16 @@ header .container-fluid {
         gap: 20px;
     }
 
+}
 
+@media screen and (max-width: 340px) {
+    /*Give the columns a min-width to have them wrap*/
+    .nav-responsive .dropdown-menu .col-6 {
+        min-width: 160px;
+    }
+
+    /*Horizontally align dropdown-menu images*/
+    .nav-responsive .dropdown-menu .row {
+        justify-content: center;
+    }
 }
