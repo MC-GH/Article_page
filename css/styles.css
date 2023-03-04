@@ -2,6 +2,7 @@
 :root {
     --purple: #5541f0;
     --purpleHover:#4133af;
+    --bgColor: #fff;
     --lineColor: #f1f1f8;
 }
 
@@ -18,10 +19,15 @@ a:hover {
     color: currentColor;
 }
 
-header {
+header, .subheader {
     width: 100vw;
     border-bottom: 1px solid var(--lineColor);
     padding: 15px 0px;
+    background-color: var(--bgColor);
+}
+
+.subheader {
+    padding: 0 24px;
 }
 
 header .container-fluid {
@@ -30,6 +36,16 @@ header .container-fluid {
     align-items: center;
     height: 100%;
     gap: 10px;
+}
+
+.subheader .col-3 {
+    font-weight: 600;
+    font-size: .875rem;
+    padding: 8px 0 14px 0;
+}
+
+.subheader-item.active {
+    color: red;
 }
 
 .nav-responsive {
