@@ -244,6 +244,10 @@ hr {
     height: 40px;
 }
 
+.main img {
+    border-radius: 12px;
+}
+
 @media screen and (max-width: 768px) {
     .nav-left, .nav-traffic, .search, .nav-weather {
         display: none;
