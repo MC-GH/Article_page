@@ -254,7 +254,7 @@ hr {
     left: 0;
     right: 0;
     content:"";
-    background-image: url(/img/mainArticlebgpng.png);
+    background-image: url(./img/mainArticlebgpng.png);
     background-size: 110vw 100%;
     background-position: center center;
     z-index: -1;
