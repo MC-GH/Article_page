@@ -169,12 +169,9 @@ header, .subheader {
 
 .sidebar {
     border-right: 1px solid var(--lineColor);
-    /*Temp border for working*/
-    border: 1px solid grey;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* min-width: fit-content; */
 }
 
 .sidebar-item {
@@ -258,17 +255,35 @@ hr {
     right: 0;
     content:"";
     background-image: url(/img/mainArticlebgpng.png);
-    background-size: 100%;
+    background-size: 110vw 100%;
     background-position: center center;
     z-index: -1;
     opacity: 0.4;
+}
+
+.mainTitle {
+    /* font-size: 1.36rem;
+    font-weight: 600; */
 }
 
 .main img {
     border-radius: 12px;
     height: 100%;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
+}
+
+.articleSubheading {
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.mainArticleTitle {
+    font-weight: 600;
+}
+
+.articlePosted {
+
 }
 
 @media screen and (max-width: 768px) {
@@ -288,6 +303,14 @@ hr {
         gap: 20px;
     }
 
+}
+
+@media screen and (max-width: 576px) {
+    .main img {
+        border-radius: 12px;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 340px) {
