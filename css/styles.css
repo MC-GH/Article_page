@@ -286,6 +286,10 @@ hr {
     max-width: 100%;
 }
 
+.subArticleTitle {
+    font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
     .nav-left, .nav-traffic, .search, .nav-weather {
         display: none;
