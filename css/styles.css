@@ -261,16 +261,10 @@ hr {
     opacity: 0.4;
 }
 
-.mainTitle {
-    /* font-size: 1.36rem;
-    font-weight: 600; */
-}
-
 .main img {
     border-radius: 12px;
     height: 100%;
     width: 100%;
-    max-width: 400px;
 }
 
 .articleSubheading {
@@ -284,6 +278,12 @@ hr {
 
 .articlePosted {
 
+}
+
+.subArticle img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -303,14 +303,6 @@ hr {
         gap: 20px;
     }
 
-}
-
-@media screen and (max-width: 576px) {
-    .main img {
-        border-radius: 12px;
-        height: 100%;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 340px) {
