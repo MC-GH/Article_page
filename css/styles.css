@@ -244,8 +244,31 @@ hr {
     height: 40px;
 }
 
+.mainArticle {
+    position: relative;
+    z-index: 1;
+}
+
+.mainArticlebg::before {
+    position: absolute;
+    border-radius: 12px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content:"";
+    background-image: url(/img/mainArticlebgpng.png);
+    background-size: 100%;
+    background-position: center center;
+    z-index: -1;
+    opacity: 0.4;
+}
+
 .main img {
     border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
 }
 
 @media screen and (max-width: 768px) {
@@ -276,6 +299,12 @@ hr {
     /*Horizontally align dropdown-menu images*/
     .nav-responsive .dropdown-menu .row {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mainArticlebg::before {
+        border-radius: 0px;
     }
 }
 
