@@ -4,6 +4,8 @@ $purpleHover:#4133af;
 $bgColor: #fff;
 $lineColor: #f1f1f8;
 $black: #15103a;
+$bold: 500;
+$bolder: 600;
 
 * {
     font-family: "Roobert",Helvetica,Arial,sans-serif;
@@ -34,7 +36,7 @@ header, .subheader {
 }
 
 .subheader-item {
-    font-weight: 600;
+    font-weight: $bolder;
     font-size: .875rem;
     padding: 8px 14px;
 }
@@ -61,7 +63,7 @@ header, .subheader {
 }
 
 .bold {
-    font-weight: 500;
+    font-weight: $bold;
 }
 
 /*Do not set with Bootstrap*/
@@ -88,7 +90,7 @@ header, .subheader {
     font-size: 14px;
     padding: 8px 15px;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: $bolder;
 }
 
 .share-item {
@@ -111,7 +113,7 @@ header, .subheader {
 /*Do not set with Bootstrap*/
 .nav-right {
     gap: 10px;
-    font-weight: 500;
+    font-weight: $bold;
 }
 
 .search {
@@ -146,7 +148,7 @@ header, .subheader {
 }
 
 .sidebar-item {
-    font-weight: 600;
+    font-weight: $bolder;
     padding: 12px 8px;
     border-radius: 4px;
 }
@@ -170,7 +172,7 @@ header, .subheader {
 .bottomSidebar button {
     border: 1px solid $lineColor;
     color: var(--black);
-    font-weight: 500;
+    font-weight: $bold;
     background-color: $bgColor;
     padding: 12px 4px;
     margin: 0px 0px 16px 0px;
@@ -187,7 +189,7 @@ header, .subheader {
 
 .bottomSidebar li.dropdown-item {
     padding: 4px 16px;
-    font-weight: 500;
+    font-weight: $bold;
 }
 
 hr {
@@ -235,7 +237,7 @@ hr {
 }
 
 .subArticleTitle {
-    font-weight: 600;
+    font-weight: $bolder;
 }
 
 .subArticleContent {
