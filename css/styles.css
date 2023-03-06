@@ -12,7 +12,6 @@
 }
 
 body {
-    overflow: hidden;
     background-color: var(--bgColor);
 }
 
@@ -26,7 +25,6 @@ a:hover {
 }
 
 header, .subheader {
-    width: 100vw;
     border-bottom: 1px solid var(--lineColor);
     padding: 15px 0px;
     background-color: var(--bgColor);
@@ -34,14 +32,6 @@ header, .subheader {
 
 .subheader {
     display: none;
-}
-
-.subheader .container-fluid, header .container-fluid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    gap: 10px;
 }
 
 .subheader-item {
@@ -62,20 +52,8 @@ header, .subheader {
 }
 
 .nav-responsive button {
-    padding: 0;
     background-color: transparent;
     color: black;
-    border: none;
-}
-
-.nav-responsive .dropdown-menu {
-    width: 100%;
-}
-
-.nav-responsive .dropdown-menu .col-6 {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
 }
 
 .nav-responsive .dropdown-menu img {
@@ -84,16 +62,6 @@ header, .subheader {
 
 .bold {
     font-weight: 500;
-}
-
-.large {
-    font-size: 20px;
-}
-
-.nav-left, .nav-right {
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
 }
 
 .welcome-item {
@@ -158,9 +126,6 @@ header, .subheader {
 
 .responsive-settings, .responsive-contact {
     display: none;
-}
-
-.main {
 }
 
 .main .sidebar {
@@ -277,7 +242,7 @@ hr {
 }
 
 .articlePosted {
-
+    font-size: .85rem;
 }
 
 .subArticle img {
@@ -288,6 +253,10 @@ hr {
 
 .subArticleTitle {
     font-weight: 600;
+}
+
+.subArticleContent {
+    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
