@@ -236,6 +236,10 @@ hr {
   overflow: hidden;
 }
 
+.articleContainer img {
+  height: 50%;
+}
+
 .testdiv {
   flex: 1;
   min-height: 150px;
