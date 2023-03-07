@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <header class="min-vw-100">
+  <header class="sticky-top">
     <div class="container-fluid col-12 col-xxl-8 gap-1 d-flex justify-content-between align-items-center h-100">
       
       <div class="nav-responsive">
@@ -149,16 +149,26 @@
 
       </div>
     </div>
+
+    <div class="subheader">
+      <div class="container-fluid col-12 col-xxl-8 g-1 d-flex justify-content-between align-items-center h-100">
+         <div><a href="#" class="subheader-item active">Hoofdpunten</a></div>
+          <div><a href="#" class="subheader-item">Regio</a></div>
+          <div><a href="#" class="subheader-item">Thema's</a></div>
+          <div><a href="#" class="subheader-item">Recent</a></div>
+        </div>
+    </div>
+
   </header>
 
-  <div class="subheader min-vw-100">
+  <!-- <div class="subheader">
     <div class="container-fluid col-12 col-xxl-8 g-1 d-flex justify-content-between align-items-center h-100">
        <div><a href="#" class="subheader-item active">Hoofdpunten</a></div>
         <div><a href="#" class="subheader-item">Regio</a></div>
         <div><a href="#" class="subheader-item">Thema's</a></div>
         <div><a href="#" class="subheader-item">Recent</a></div>
       </div>
-  </div>
+  </div> -->
 
   <div class="main">
     <div class="main container-fluid col-12 col-xxl-8">
@@ -367,8 +377,50 @@
               </div>
               </div>
             </div>
-            <div class="row"></div>
+
+            <div class="row articleContainer p-3 py-md-4">
+              <div class="article col-12 col-sm-6 col-xl-4 d-flex flex-column">
+                <img class="w-100 h-100 mw-100" src="./img/Article1.jpg">
+                <div class="articleSubheading"><a href="#">Oorlog Rusland-Oekraïne</div>
+                  <div class="subArticleTitle">Oekraïnse leger krijgt het steeds moeilijker in Bachmoet, maar geeft voorlopg niet op</div>
+                  <div class="articlePosted">
+                        <svg viewBox="0 0 16 16" width= "12px" style="margin-top: -2px" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.57692 3.96154C8.57692 3.64423 8.31731 3.38462 8 3.38462C7.68269 3.38462 7.42308 3.64423 7.42308 3.96154H8.57692ZM8 8H7.42308C7.42308 8.31731 7.68269 8.57692 8 8.57692V8ZM12.0385 8.57692C12.3558 8.57692 12.6154 8.31731 12.6154 8C12.6154 7.68269 12.3558 7.42308 12.0385 7.42308V8.57692ZM14.3462 8C14.3462 11.5077 11.5077 14.3462 8 14.3462V15.5C12.1423 15.5 15.5 12.1423 15.5 8H14.3462ZM8 14.3462C4.49231 14.3462 1.65385 11.5077 1.65385 8H0.5C0.5 12.1423 3.85769 15.5 8 15.5V14.3462ZM1.65385 8C1.65385 4.49231 4.49231 1.65385 8 1.65385V0.5C3.85769 0.5 0.5 3.85769 0.5 8H1.65385ZM8 1.65385C11.5077 1.65385 14.3462 4.49231 14.3462 8H15.5C15.5 3.85769 12.1423 0.5 8 0.5V1.65385ZM7.42308 3.96154V8H8.57692V3.96154H7.42308ZM8 8.57692H12.0385V7.42308H8V8.57692Z"></path>
+                        </svg>
+                        3 dagen geleden</a>
+                  </div>
+              </div>
+
+              <div class="article col-12 col-sm-6 col-xl-4 d-flex flex-column justify-content-center">
+                <img class="w-100 h-100 mw-100" src="./img/Article2.jpg">
+                <div class="articleSubheading"><a href="#">Sporza</div>
+                  <div class="subArticleTitle">Bart Swings rijdt meesterlijk naar wereldtitel, Sandrine Tas 6e op massastart</div>
+                  <div class="articlePosted">
+                        <svg viewBox="0 0 16 16" width= "12px" style="margin-top: -2px" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.57692 3.96154C8.57692 3.64423 8.31731 3.38462 8 3.38462C7.68269 3.38462 7.42308 3.64423 7.42308 3.96154H8.57692ZM8 8H7.42308C7.42308 8.31731 7.68269 8.57692 8 8.57692V8ZM12.0385 8.57692C12.3558 8.57692 12.6154 8.31731 12.6154 8C12.6154 7.68269 12.3558 7.42308 12.0385 7.42308V8.57692ZM14.3462 8C14.3462 11.5077 11.5077 14.3462 8 14.3462V15.5C12.1423 15.5 15.5 12.1423 15.5 8H14.3462ZM8 14.3462C4.49231 14.3462 1.65385 11.5077 1.65385 8H0.5C0.5 12.1423 3.85769 15.5 8 15.5V14.3462ZM1.65385 8C1.65385 4.49231 4.49231 1.65385 8 1.65385V0.5C3.85769 0.5 0.5 3.85769 0.5 8H1.65385ZM8 1.65385C11.5077 1.65385 14.3462 4.49231 14.3462 8H15.5C15.5 3.85769 12.1423 0.5 8 0.5V1.65385ZM7.42308 3.96154V8H8.57692V3.96154H7.42308ZM8 8.57692H12.0385V7.42308H8V8.57692Z"></path>
+                        </svg>
+                        17u35</a>
+                  </div>
+              </div>
+
+              <div class="article col-12 col-sm-6 col-xl-4 d-flex flex-column justify-content-center">
+                <img class="w-100 h-100 mw-100" src="./img/Article3.jpg">
+                <div class="articleSubheading"><a href="#">Olivier Vandecasteele</div>
+                  <div class="subArticleTitle">Zus van Olivier Vandecasteele reageert op uitspraak Grondwettelijk Hof: "Beste dat wij konden verwachten"</div>
+                  <div class="articlePosted">
+                        <svg viewBox="0 0 16 16" width= "12px" style="margin-top: -2px" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.57692 3.96154C8.57692 3.64423 8.31731 3.38462 8 3.38462C7.68269 3.38462 7.42308 3.64423 7.42308 3.96154H8.57692ZM8 8H7.42308C7.42308 8.31731 7.68269 8.57692 8 8.57692V8ZM12.0385 8.57692C12.3558 8.57692 12.6154 8.31731 12.6154 8C12.6154 7.68269 12.3558 7.42308 12.0385 7.42308V8.57692ZM14.3462 8C14.3462 11.5077 11.5077 14.3462 8 14.3462V15.5C12.1423 15.5 15.5 12.1423 15.5 8H14.3462ZM8 14.3462C4.49231 14.3462 1.65385 11.5077 1.65385 8H0.5C0.5 12.1423 3.85769 15.5 8 15.5V14.3462ZM1.65385 8C1.65385 4.49231 4.49231 1.65385 8 1.65385V0.5C3.85769 0.5 0.5 3.85769 0.5 8H1.65385ZM8 1.65385C11.5077 1.65385 14.3462 4.49231 14.3462 8H15.5C15.5 3.85769 12.1423 0.5 8 0.5V1.65385ZM7.42308 3.96154V8H8.57692V3.96154H7.42308ZM8 8.57692H12.0385V7.42308H8V8.57692Z"></path>
+                        </svg>
+                        11u53</a>
+                  </div>
+              </div>
+
+              
+
+            </div>
+
           </div>
+
         </div>
       </div>
 
