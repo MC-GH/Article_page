@@ -247,6 +247,12 @@ hr {
 .articleContainer img {
 }
 
+.testdiv {
+    flex: 1;
+    min-height: 150px;
+    width: auto;
+}
+
 @media screen and (max-width: 767px) {
     .nav-left, .nav-traffic, .search, .nav-weather {
         display: none;
