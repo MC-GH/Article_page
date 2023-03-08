@@ -232,18 +232,30 @@ hr {
   font-weight: 600;
 }
 
-.subArticleContent {
-  overflow: hidden;
-}
-
 .articleContainer img {
-  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 185px;
 }
 
-.testdiv {
-  flex: 1;
-  min-height: 150px;
-  width: auto;
+.articleContent {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.mainArticlebg2::before {
+  position: absolute;
+  border-radius: 12px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background-image: url(../img/mainArticlebgpng2.png);
+  background-size: 110vw 100%;
+  background-position: center center;
+  z-index: -1;
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 767px) {
