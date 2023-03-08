@@ -283,7 +283,7 @@ hr {
   }
 }
 @media screen and (max-width: 1200px) {
-  .mainArticlebg::before {
+  .mainArticlebg::before, .mainArticlebg2::before {
     border-radius: 0px;
   }
 }/*# sourceMappingURL=styles.css.map */
