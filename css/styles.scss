@@ -4,6 +4,7 @@ $purpleHover:#4133af;
 $bgColor: #fff;
 $lineColor: #f1f1f8;
 $black: #15103a;
+$source: #9da5b3;
 $bold: 500;
 $bolder: 600;
 
@@ -263,6 +264,45 @@ hr {
     z-index: -1;
     opacity: 0.4;
 }
+
+.article .img-fluid {
+    object-position: 0% 0%;
+    border-radius: 30px;
+    object-fit:cover;
+    max-height: 500px;
+}
+
+.source {
+    font-weight: $bold;
+    color: $source;
+    font-size: .875rem;
+}
+
+.articleTitle {
+    font-size: 2.5rem;
+    font-weight: $bolder;
+}
+
+.articleIntro {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.article svg {
+    width: 14px;
+    margin-top: -3px;
+}
+
+.socialBar {
+    background-color: $lineColor;
+    border-radius: 32px;
+}
+
+.socialBar svg {
+    width: 32px;
+    height: 32px;
+}
+
 
 @media screen and (max-width: 767px) {
     .nav-left, .nav-traffic, .search, .nav-weather {
