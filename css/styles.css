@@ -15,7 +15,8 @@ a:hover {
   color: currentColor;
 }
 
-header, .subheader {
+header,
+.subheader {
   border-bottom: 1px solid #f1f1f8;
   padding: 15px 0px 5px 0px;
   background-color: #fff;
@@ -58,7 +59,8 @@ header, .subheader {
 }
 
 /*Do not set with Bootstrap*/
-.nav-left, .nav-right {
+.nav-left,
+.nav-right {
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -70,15 +72,18 @@ header, .subheader {
   background-color: #5541f0;
 }
 
-.welcome-item svg, .share-item svg {
+.welcome-item svg,
+.share-item svg {
   margin-top: 2px;
 }
 
-.welcome-item:hover, .nav-item {
+.welcome-item:hover,
+.nav-item {
   background-color: #4133af;
 }
 
-.welcome-item, .share-item {
+.welcome-item,
+.share-item {
   font-size: 14px;
   padding: 8px 15px;
   border-radius: 4px;
@@ -98,7 +103,8 @@ header, .subheader {
   width: 120px;
 }
 
-.nav-weather svg, .nav-traffic svg {
+.nav-weather svg,
+.nav-traffic svg {
   fill: #5541f0;
 }
 
@@ -115,7 +121,9 @@ header, .subheader {
 }
 
 /*Do not set with Bootstrap*/
-.search, .nav-weather, .nav-traffic {
+.search,
+.nav-weather,
+.nav-traffic {
   align-items: center;
   display: flex;
   gap: 10px;
@@ -123,7 +131,8 @@ header, .subheader {
 }
 
 /*Do not set with Bootstrap*/
-.responsive-settings, .responsive-contact {
+.responsive-settings,
+.responsive-contact {
   display: none;
 }
 
@@ -306,14 +315,35 @@ hr {
   line-height: 70px;
 }
 
+.article p {
+  text-align: justify;
+}
+
+.update {
+  padding: 4px 8px;
+  color: #fff;
+  background-color: #5541f0;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-right: 12px;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
 @media screen and (max-width: 767px) {
-  .nav-left, .nav-traffic, .search, .nav-weather {
+  .nav-left,
+  .nav-traffic,
+  .search,
+  .nav-weather {
     display: none;
   }
   .sidebar {
     display: none;
   }
-  .nav-responsive, .responsive-settings, .responsive-contact, .subheader {
+  .nav-responsive,
+  .responsive-settings,
+  .responsive-contact,
+  .subheader {
     display: block;
   }
   .nav-right {
@@ -331,7 +361,8 @@ hr {
   }
 }
 @media screen and (max-width: 1200px) {
-  .mainArticlebg::before, .mainArticlebg2::before {
+  .mainArticlebg::before,
+  .mainArticlebg2::before {
     border-radius: 0px;
   }
 }/*# sourceMappingURL=styles.css.map */
