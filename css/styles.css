@@ -281,6 +281,7 @@ hr {
 .articleIntro {
   font-size: 1.75rem;
   font-weight: 400;
+  text-align: justify;
 }
 
 .article svg {
@@ -296,6 +297,13 @@ hr {
 .socialBar svg {
   width: 32px;
   height: 32px;
+}
+
+.initial::first-letter {
+  font-size: 3em;
+  font-weight: 600;
+  padding: 0px;
+  line-height: 70px;
 }
 
 @media screen and (max-width: 767px) {
